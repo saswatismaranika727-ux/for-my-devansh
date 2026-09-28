@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Devansh ✨</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ffe6ea 0%, #e8dff5 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #4a4a4a;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px 30px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+
+        h1 {
+            color: #d63384;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            color: #6c757d;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .card-box {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+            text-align: left;
+            border-left: 4px solid #d63384;
+        }
+
+        .card-box h3 {
+            color: #495057;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-box p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .interactive-btn {
+            background: #d63384;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(214, 51, 132, 0.3);
+            margin-top: 10px;
+        }
+
+        .interactive-btn:hover {
+            background: #b8216b;
+            transform: translateY(-2px);
+        }
+
+        #hidden-message {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff0f5;
+            border-radius: 12px;
+            border: 1px dashed #d63384;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .footer-text {
+            margin-top: 25px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hey Devansh ✨</h1>
+        <p class="subtitle">A little note for my Kuchupuchu</p>
+
+        <div class="card-box">
+            <h3>🌸 A Soft Realization</h3>
+            <p>I know I overreacted and created unnecessary drama when you needed peace the most. I am genuinely sorry for causing stress during your exam days. You deserve calm and positivity not heavy conversations.</p>
+        </div>
+
+        <div class="card-box">
+            <h3>🌿 My Promise to You</h3>
+            <p>No more long explanations or empty promises. I’m bringing emotional maturity, self-control and a happy space into our bond..... From now on only support, peace and cheerful vibes for you!</p>
+        </div>
+
+        <div class="card-box">
+            <h3>🤍 Proud Of You</h3>
+            <p>You work so hard for your exams and goals  and I truly respect your dedication. I am always in your corner cheering for you silently and proudly.</p>
+        </div>
+
+        <button class="interactive-btn" onclick="showMessage()">Tap For A Secret Hug 🤗</button>
+
+        <div id="hidden-message">
+            <p style="color: #d63384; font-weight: bold; font-size: 1.05rem;">
+                "I Love You So Much Devansh... Relax focus on your goals and know that your calm girlfriend is right here waiting to celebrate your success." 💕✨
+            </p>
+        </div>
+
+        <p class="footer-text">Built with love and zero drama 🤍</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            var msg = document.getElementById("hidden-message");
+            if (msg.style.display === "block") {
+                msg.style.display = "none";
+            } else {
+                msg.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
+
